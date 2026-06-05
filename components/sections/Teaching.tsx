@@ -43,7 +43,7 @@ const formats = [
 
 export function Teaching() {
   return (
-    <section id="teaching" className="py-28 px-6 bg-[#070707]">
+    <section id="teaching" className="py-16 px-6 bg-[#070707]">
       <div className="max-w-6xl mx-auto">
         <SectionHeader
           label="Teaching & Speaking"

@@ -154,8 +154,8 @@ export function Navigation() {
                   <button
                     key={link.href}
                     onClick={() => {
-                      scrollToSection(link.href)
                       setMobileOpen(false)
+                      setTimeout(() => scrollToSection(link.href), 250)
                     }}
                     className="block w-full text-left px-4 py-3 text-sm text-zinc-400 hover:text-white hover:bg-white/4 rounded-lg transition-colors"
                   >

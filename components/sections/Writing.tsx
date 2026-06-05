@@ -7,7 +7,7 @@ import { FileText, ArrowRight, Rss } from "lucide-react"
 
 export function Writing() {
   return (
-    <section id="writing" className="py-28 px-6">
+    <section id="writing" className="py-16 px-6">
       <div className="max-w-6xl mx-auto">
         <SectionHeader
           label="Writing"

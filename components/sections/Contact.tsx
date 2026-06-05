@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { profile } from "@/lib/data"
-import { Mail, Phone, Copy, Check, MapPin, Send, ArrowRight, CheckCircle, AlertCircle, Loader2 } from "lucide-react"
+import { Mail, Phone, Copy, Check, MapPin, Send, ArrowRight, CheckCircle, AlertCircle, Loader2, Download, FileText } from "lucide-react"
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons"
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xpqeqapk"
@@ -68,7 +68,7 @@ const contactLinks = [
   {
     icon: GithubIcon,
     label: "GitHub",
-    value: "github.com/vimalrajsvr404",
+    value: "github.com/Vimalraj-svr",
     href: profile.github,
     copyable: false,
     description: "Open source & side projects",
@@ -271,7 +271,7 @@ function ContactForm() {
 
 export function Contact() {
   return (
-    <section id="contact" className="py-28 px-6 bg-[#070707]">
+    <section id="contact" className="py-16 px-6 bg-[#070707]">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-start">
 
@@ -346,6 +346,27 @@ export function Contact() {
             <div className="flex items-center gap-2 text-sm text-zinc-600">
               <MapPin size={14} />
               <span>{profile.location}</span>
+            </div>
+
+            {/* Resume */}
+            <div className="flex gap-3 mt-6">
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2.5 text-xs font-medium text-zinc-300 border border-white/10 rounded-lg hover:bg-white/6 hover:text-white hover:border-white/20 transition-all"
+              >
+                <FileText size={13} />
+                View Resume
+              </a>
+              <a
+                href="/resume.pdf"
+                download="Vimalraj_S_Resume.pdf"
+                className="flex items-center gap-2 px-4 py-2.5 text-xs font-medium text-indigo-400 border border-indigo-500/20 rounded-lg hover:bg-indigo-500/10 hover:text-indigo-300 transition-all"
+              >
+                <Download size={13} />
+                Download PDF
+              </a>
             </div>
           </motion.div>
 

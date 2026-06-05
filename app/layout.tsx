@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Vimalraj S — Senior Software Engineer",
   description:
-    "Full Stack Engineer building scalable enterprise platforms, AI-powered products, and developer tooling. 40,000+ users served, 50,000+ document generations shipped.",
+    "Full Stack Engineer building scalable enterprise platforms, AI-powered products and developer tooling. 60,000+ users served.",
   keywords: [
     "full stack engineer",
     "angular",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Vimalraj S — Senior Software Engineer",
     description:
-      "Full Stack Engineer building scalable enterprise platforms, AI-powered products, and developer tooling.",
+      "Full Stack Engineer building scalable enterprise platforms, AI-powered products and developer tooling.",
     type: "website",
     locale: "en_IN",
   },

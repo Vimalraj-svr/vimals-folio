@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { ArrowRight, Mail } from "lucide-react"
+import Image from "next/image"
+import { ArrowRight, Mail, Download } from "lucide-react"
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons"
 
 import { heroRoles, stats, profile } from "@/lib/data"
@@ -51,11 +52,19 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-white/10 bg-white/3 text-sm text-zinc-400 mb-10"
           >
-            <span className="relative flex h-2 w-2">
+            {/* <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400" />
-            </span>
-            Senior Software Engineer · Iamneo, An NIIT Venture
+            </span> */}
+            Senior Software Engineer ·
+            <Image
+              src="/images/iamneo.png"
+              alt="Iamneo"
+              width={70}
+              height={70}
+              className="h-5 w-auto"
+              style={{ mixBlendMode: "screen" }}
+            />
           </motion.div>
 
           {/* Name */}
@@ -96,7 +105,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-lg md:text-xl text-zinc-500 max-w-2xl mx-auto mb-12 leading-relaxed"
           >
-            Building scalable enterprise platforms, AI-powered products, and developer tooling
+            Building scalable enterprise platforms, AI-powered products and developer tooling
             that engineers actually want to use.
           </motion.p>
 
@@ -124,6 +133,14 @@ export function Hero() {
               <Mail size={16} />
               Get in Touch
             </button>
+            <a
+              href="/resume.pdf"
+              download="Vimalraj_S_Resume.pdf"
+              className="flex items-center gap-2 px-6 py-3 border border-white/10 text-zinc-300 text-sm font-medium rounded-xl hover:bg-white/4 hover:text-white hover:border-white/20 transition-all duration-200"
+            >
+              <Download size={16} />
+              Resume
+            </a>
           </motion.div>
 
           {/* Social links */}
@@ -131,7 +148,7 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.7 }}
-            className="flex items-center justify-center gap-4 mb-20"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-20"
           >
             <a
               href={profile.github}
@@ -140,9 +157,9 @@ export function Hero() {
               className="flex items-center gap-2 text-xs text-zinc-600 hover:text-zinc-300 transition-colors font-mono"
             >
               <GithubIcon size={14} />
-              github.com/vimalrajsvr404
+              <span className="hidden sm:inline">github.com/</span>Vimalraj-svr
             </a>
-            <span className="text-zinc-800">·</span>
+            <span className="hidden sm:block text-zinc-800">·</span>
             <a
               href={profile.linkedin}
               target="_blank"
@@ -150,7 +167,7 @@ export function Hero() {
               className="flex items-center gap-2 text-xs text-zinc-600 hover:text-zinc-300 transition-colors font-mono"
             >
               <LinkedinIcon size={14} />
-              linkedin.com/in/vimalrajs2002
+              <span className="hidden sm:inline">linkedin.com/in/</span>vimalrajs2002
             </a>
           </motion.div>
         </div>

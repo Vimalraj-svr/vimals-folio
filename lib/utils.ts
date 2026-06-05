@@ -8,6 +8,8 @@ export function cn(...inputs: ClassValue[]) {
 export function scrollToSection(id: string) {
   const el = document.getElementById(id)
   if (el) {
-    el.scrollIntoView({ behavior: "smooth", block: "start" })
+    const navHeight = 64
+    const top = el.getBoundingClientRect().top + window.scrollY - navHeight
+    window.scrollTo({ top, behavior: "smooth" })
   }
 }

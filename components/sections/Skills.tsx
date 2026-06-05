@@ -24,7 +24,7 @@ const headerColorMap: Record<string, string> = {
 
 export function Skills() {
   return (
-    <section id="skills" className="py-28 px-6">
+    <section id="skills" className="py-16 px-6">
       <div className="max-w-6xl mx-auto">
         <SectionHeader
           label="Skills"
@@ -73,25 +73,6 @@ export function Skills() {
           ))}
         </div>
 
-        {/* Languages note */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-8 p-5 glass-card rounded-xl border-dashed"
-        >
-          <p className="text-xs font-mono text-zinc-600 tracking-widest uppercase mb-2">
-            Languages
-          </p>
-          <div className="flex flex-wrap gap-3">
-            {["TypeScript", "JavaScript", "Python", "Java", "C"].map((lang) => (
-              <span key={lang} className="text-sm text-zinc-400 font-mono">
-                {lang}
-              </span>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </section>
   )

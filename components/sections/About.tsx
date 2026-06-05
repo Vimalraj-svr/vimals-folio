@@ -8,12 +8,12 @@ import { Trophy } from "lucide-react"
 
 export function About() {
   return (
-    <section id="about" className="py-28 px-6">
+    <section id="about" className="py-16 px-6">
       <div className="max-w-6xl mx-auto">
         <SectionHeader
           label="About"
           title="Engineer first. Builder always."
-          description="I didn't start by writing production code. I started by teaching it — and that changed how I think about everything."
+          description="I didn't start by writing production code. I started by teaching it and that changed how I think about everything."
         />
 
         {/* Photo + Narrative row */}
@@ -60,30 +60,30 @@ export function About() {
           >
             <p>
               During my final two years at Bannari Amman Institute of Technology, I trained{" "}
-              <span className="text-zinc-200 font-medium">105+ students</span> across C/C++,
-              Machine Learning, and MERN Stack — not as a TA reading from slides, but as someone
+              <span className="text-zinc-200 font-medium">105+ school and college students</span> across C/C++,
+              Machine Learning, IoT and MERN Stack - not as a TA reading from slides, but as someone
               who had to figure out what makes complex ideas actually stick. That experience
               sharpened something more valuable than technical skill:{" "}
               <em className="text-zinc-300">clarity of thought</em>.
             </p>
             <p>
               In August 2023, I joined Iamneo as an intern. Within nine months, I had shipped
-              real-time notification infrastructure, automated operational workflows, and
+              realtime notification infrastructure, automated operational workflows and
               IP-based security systems that cut fraudulent access by{" "}
-              <span className="text-zinc-200 font-medium">95%</span>.
+              <span className="text-zinc-200 font-medium">50%</span>.
             </p>
             <p>
-              By 2024, as Software Engineer, I was operating at a different scale — a WhatsApp
+              By 2024, as Software Engineer, I was operating at a different scale. A WhatsApp
               system reaching{" "}
-              <span className="text-zinc-200 font-medium">40,000+ students</span>, a resume
+              <span className="text-zinc-200 font-medium">60,000+ students</span>, a resume
               platform processing{" "}
               <span className="text-zinc-200 font-medium">50,000+ documents</span> in its launch
-              month, and a complete mobile-to-web migration in a single month.
+              month and a complete mobile-to-web migration in a single month.
             </p>
             <p>
               Today, as Senior Engineer, I design the systems that make the platform work: RBAC
-              hierarchies, AI-powered interview pipelines, and the engineering culture that makes
-              teams faster. I still teach — because it&apos;s how I stay sharp.
+              hierarchies, AI-powered interview pipelines and the engineering culture that makes
+              teams faster. I still teach because it&apos;s how I stay sharp.
             </p>
           </motion.div>
         </div>

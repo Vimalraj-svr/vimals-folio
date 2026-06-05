@@ -23,12 +23,12 @@ const typeLabel: Record<string, { label: string; color: "brand" | "violet" | "cy
 
 export function Experience() {
   return (
-    <section id="experience" className="py-28 px-6 bg-[#070707]">
+    <section id="experience" className="py-16 px-6 bg-[#070707]">
       <div className="max-w-6xl mx-auto">
         <SectionHeader
           label="Experience"
           title="How I grew, and what I shipped."
-          description="Three years at one company, compounding ownership. From intern to senior engineer — here's the work."
+          description="Three years at one company, compounding ownership. From intern to senior engineer. Here's the work."
         />
 
         <div className="relative">

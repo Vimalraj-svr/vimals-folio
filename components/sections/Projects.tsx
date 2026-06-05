@@ -5,6 +5,7 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { SectionHeader } from "@/components/ui/SectionHeader"
 import { Badge } from "@/components/ui/Badge"
+import { ProjectPreview } from "@/components/ui/ProjectPreview"
 import { projects } from "@/lib/data"
 import { ExternalLink, ChevronDown, ChevronUp, Layers } from "lucide-react"
 
@@ -15,12 +16,12 @@ export function Projects() {
   const rest = projects.filter((p) => !p.featured)
 
   return (
-    <section id="projects" className="py-28 px-6">
+    <section id="projects" className="py-16 px-6">
       <div className="max-w-6xl mx-auto">
         <SectionHeader
           label="Projects"
           title="Things I've shipped."
-          description="Products built with real constraints — privacy, scale, latency, or a one-month deadline. Each one taught me something the job didn't."
+          description="Products built with real constraints. Privacy, scale, latency, or a one-month deadline. Each one taught me something the job didn't."
         />
 
         {/* Featured projects */}
@@ -92,7 +93,11 @@ function ProjectCard({
         }}
       >
         {/* Gradient top bar */}
-        <div className={`h-px w-full bg-gradient-to-r ${project.gradient} opacity-60`} />
+        <div className={`h-px w-full bg-linear-to-r ${project.gradient} opacity-60`} />
+
+        {"preview" in project && project.preview && project.live && (
+          <ProjectPreview url={project.live} name={project.name} />
+        )}
 
         <div className={compact ? "p-5" : "p-6"}>
           {/* Category + year */}
