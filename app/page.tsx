@@ -8,11 +8,13 @@ import { Skills } from "@/components/sections/Skills"
 import { Teaching } from "@/components/sections/Teaching"
 import { Writing } from "@/components/sections/Writing"
 import { Contact } from "@/components/sections/Contact"
+import { BrutalistAnimations } from "@/components/ui/BrutalistAnimations"
 
 export default function Home() {
   return (
     <>
       <Navigation />
+      <BrutalistAnimations />
       <main>
         <Hero />
         <About />
