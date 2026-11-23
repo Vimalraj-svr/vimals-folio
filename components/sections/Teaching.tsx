@@ -5,7 +5,7 @@ export function Teaching() {
     <section id="teaching" className="section">
       <div className="container">
         <div className="section-header" data-slam>
-          <p className="section-label">Teaching & Mentorship</p>
+          <p className="section-label">Teaching & Leadership</p>
           <h2 className="section-title">Building instinct<br />in others.</h2>
         </div>
 

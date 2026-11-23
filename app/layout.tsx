@@ -19,12 +19,12 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Vimalraj S — Senior Software Engineer",
   description:
-    "Full Stack Engineer building scalable enterprise platforms, AI-powered products, and developer tooling. 60,000+ users served.",
+    "Senior Software Engineer leading a team of 5 on a 110,000+ user campus placement platform: AI features, MCP integrations, GKE reliability and cloud security.",
   keywords: ["full stack engineer", "angular", "react", "nodejs", "nestjs", "ai", "typescript", "vimalraj"],
   authors: [{ name: "Vimalraj S" }],
   openGraph: {
     title: "Vimalraj S — Senior Software Engineer",
-    description: "Full Stack Engineer building scalable enterprise platforms, AI-powered products, and developer tooling.",
+    description: "Senior Software Engineer building scalable placement platforms, AI products and developer tooling.",
     type: "website",
     locale: "en_IN",
   },

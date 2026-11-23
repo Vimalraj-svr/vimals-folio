@@ -11,21 +11,21 @@ export const profile = {
   phone: "+91 7604912953",
   tagline: "Building at the intersection of scale, intelligence, and craft.",
   summary:
-    "Full Stack Engineer specializing in enterprise-grade Angular systems, Node.js backends, and AI-powered workflows. I've shipped platforms serving 60,000+ users, automated systems that eliminated operational overhead, and developer tools used daily by engineering teams.",
+    "Senior Software Engineer leading a team of 5 on a 110,000+ user campus placement platform, from product requirements and NestJS/FastAPI services to AI features, MCP integrations, GKE reliability, cloud security and cost optimisation.",
 }
 
 export const heroRoles = [
-  "Full Stack Engineer",
+  "Team Lead",
   "AI Systems Builder",
-  "Platform Architect",
+  "Cloud Reliability & Security",
   "Developer Tools Maker",
 ]
 
 export const stats = [
-  { value: 60, suffix: "K+", label: "Users Served", sub: "NeoPAT ERP · students & admins" },
-  { value: 200, suffix: "+", label: "Issues Resolved", sub: "critical · zero regressions" },
+  { value: 110, suffix: "K+", label: "Users Served", sub: "NeoPAT · students & admins" },
+  { value: 200, suffix: "+", label: "Issues Resolved", sub: "high-impact · production" },
   { value: 105, suffix: "+", label: "Students Trained", sub: "C/C++, ML, MERN Stack" },
-  { value: 40, suffix: "%", label: "Latency Cut", sub: "Meta Business API · caching" },
+  { value: 40, suffix: "%", label: "Latency Cut", sub: "frontend refactor · Meta API" },
 ]
 
 export const philosophy = [
@@ -58,22 +58,52 @@ export const experience = [
     location: "Coimbatore, Tamil Nadu",
     highlights: [
       {
-        title: "End-to-End RBAC Architecture",
-        body: "Designed and delivered complete role-based access control for NeoPAT 2.0 ERP. Permission hierarchy, role assignment workflows and UI-level access enforcement across the entire platform.",
+        title: "Team Leadership",
+        body: "Lead a team of 5 engineers on NeoPAT: finalising product requirements with stakeholders, resolving open spec decisions, and owning code reviews and production delivery. Also contribute to Python/FastAPI services on a second product platform.",
+        impact: "Team of 5",
+        impactColor: "emerald",
+      },
+      {
+        title: "Platform-wide RBAC",
+        body: "Designed and delivered RBAC covering permission hierarchies, backend authorization, role-management workflows and frontend access control.",
         impact: "Platform-wide security",
         impactColor: "cyan",
       },
       {
         title: "AI Mock Interview Platform",
-        body: "Built a real-time AI interview simulator with WebSocket speech transcription, contextual conversation memory and async evaluation pipelines enabling scalable interview practice at enterprise scale.",
+        body: "Built an AI mock-interview platform combining real-time speech transcription, contextual conversation memory and asynchronous evaluation pipelines.",
         impact: "Async eval at scale",
         impactColor: "violet",
       },
       {
-        title: "Engineering Mentorship",
-        body: "Actively mentoring interns across modules. Establishing code review processes and architectural patterns that accelerated team delivery velocity.",
-        impact: "Team acceleration",
+        title: "NeoPAT MCP Server",
+        body: "Built the NeoPAT MCP server, exposing platform data and workflows as tools so AI agents can query and act on placement operations.",
+        impact: "Agent-ready platform",
+        impactColor: "brand",
+      },
+      {
+        title: "GCP Cost Optimisation",
+        body: "Led a GCP cost review of production, finding 75% of spend was fixed capacity running at 3–6% node CPU, and drove a rightsizing plan projecting 25–40% monthly savings. Cut Elastic Cloud dev spend via shard and monitor cleanup.",
+        impact: "25–40% projected savings",
         impactColor: "emerald",
+      },
+      {
+        title: "GKE Reliability",
+        body: "Eliminated a recurring production outage traced to Spot VM node cycling and CoreDNS cold starts. Hardened GKE workloads with anti-affinity, PodDisruptionBudgets, multi-replica scaling and health probes.",
+        impact: "Recurring outage eliminated",
+        impactColor: "cyan",
+      },
+      {
+        title: "Security Audit & Hardening",
+        body: "Led a post-incident security audit of production GCP (IAM, GKE, network, storage, Cloud SQL) and remediated critical findings with zero downtime. Hardened the public API with Cloudflare WAF rules and SigNoz-based abuse alerting.",
+        impact: "Zero-downtime remediation",
+        impactColor: "violet",
+      },
+      {
+        title: "Data-layer Performance",
+        body: "Fixed Redis latency from oversized (366KB+) RBAC cache keys and ClickHouse connection resets. Profiled the 100 slowest ClickHouse queries to drive analytics query optimisation.",
+        impact: "Redis & ClickHouse tuned",
+        impactColor: "brand",
       },
     ],
   },
@@ -88,25 +118,19 @@ export const experience = [
     highlights: [
       {
         title: "WhatsApp Notification Infrastructure",
-        body: "Built a real-time placement notification system via WhatsApp Business API. Reaching 60,000+ students and administrators with near-zero latency and configurable message templates.",
-        impact: "60K+ users reached",
+        body: "Built a real-time placement notification system on the WhatsApp Business API for 110,000+ students and administrators.",
+        impact: "110K+ users reached",
         impactColor: "brand",
       },
       {
-        title: "Resume Generator at Scale",
-        body: "Developed Resume Generator and Placement Wrapped with LinkedIn OAuth. 30,000+ users processed 50,000+ document generations in the launch month alone.",
-        impact: "50K+ / launch month",
-        impactColor: "violet",
-      },
-      {
         title: "Mobile-to-Web Migration",
-        body: "Migrated the entire student-side mobile app to web within a single month. Achieving full feature parity and significantly improving desktop adoption.",
-        impact: "Full parity in 4 weeks",
+        body: "Migrated the complete student mobile app experience to the web in one month with full feature parity.",
+        impact: "Full parity in 1 month",
         impactColor: "cyan",
       },
       {
         title: "Performance & Reliability",
-        body: "Resolved 200+ critical issues across frontend and backend. Refactored Meta Business API integration. Reducing API latency by 40% through caching and batching strategies.",
+        body: "Reduced API latency by 40% through frontend refactoring and Meta Business API optimisations, and resolved 200+ high-impact production issues across frontend and backend modules.",
         impact: "40% latency reduction",
         impactColor: "emerald",
       },
@@ -122,20 +146,14 @@ export const experience = [
     location: "Tiruppur, Tamil Nadu",
     highlights: [
       {
-        title: "Engagement Automation",
-        body: "Built automated drive reminders and configurable push notification system with client-specific field configuration. Measurably increasing platform engagement from day one.",
-        impact: "Engagement increase",
-        impactColor: "brand",
-      },
-      {
-        title: "Real-time Operations",
-        body: "Developed Automatic Drive Republisher and Live Action Centre. Eliminating manual overhead and improving real-time data throughput across operational workflows.",
+        title: "Placement Operations Tooling",
+        body: "Built drive reminders, push notifications, Automatic Drive Republisher and Live Action Centre for placement operations.",
         impact: "Manual ops eliminated",
         impactColor: "cyan",
       },
       {
         title: "Platform Security",
-        body: "Implemented IP-based access controls and QR-code verification workflows. Reducing fraudulent access attempts by 95% within weeks of deployment.",
+        body: "Implemented IP-based access controls and QR-code verification, reducing fraudulent access attempts by 95%.",
         impact: "95% fraud reduction",
         impactColor: "emerald",
       },
@@ -152,7 +170,7 @@ export const experience = [
     highlights: [
       {
         title: "Technical Education Program",
-        body: "Designed and delivered curriculum across C/C++, Machine Learning and MERN Stack for 105+ students over three academic levels. Contributing to measurable improvement in their academic outcomes.",
+        body: "Trained 105+ students in C/C++, Machine Learning and MERN Stack.",
         impact: "105+ students",
         impactColor: "violet",
       },
@@ -166,7 +184,7 @@ export const projects = [
     name: "Ninaivugal",
     tagline: "A private AI that remembers who you were",
     description:
-      "Multilingual AI diary that transforms raw thoughts into structured memory and lets you have conversations with your past self across six Indic languages.",
+      "Multilingual AI diary supporting six Indian languages and English, turning unstructured thoughts into structured entries with contextual recall of past memories.",
     problem:
       "Journaling apps store text. Ninaivugal stores context, emotion, and memory. Making past entries searchable, conversational, and deeply personal. The challenge: meaningful AI recall with absolute user privacy.",
     architecture:
@@ -188,7 +206,7 @@ export const projects = [
   {
     id: "neopat",
     name: "NeoPAT 2.0",
-    tagline: "Campus placement infrastructure for 60,000+ users",
+    tagline: "Campus placement infrastructure for 110,000+ users",
     description:
       "Complete redesign and re-architecture of an enterprise campus ERP. Driving reliability, modularity, and real-time engagement at production scale.",
     problem:
@@ -196,9 +214,9 @@ export const projects = [
     architecture:
       "Modular Angular architecture with lazy loading and aggressive caching. Firestore for real-time features, NestJS backend with service-oriented structure. WhatsApp Business API integrated for notification infrastructure. RBAC built as a first-class concern.",
     challenges: [
-      "Migrating to modular architecture while the platform was live with 60K+ daily users.",
+      "Migrating to modular architecture while the platform was live with 110K+ users.",
       "RBAC hierarchy spanning college → department → student with delegation chains.",
-      "Optimizing infrastructure costs while handling 60K+ concurrent users.",
+      "Cutting GCP infrastructure costs (25–40% projected) while keeping a 110K+ user platform reliable.",
     ],
     tech: ["Angular", "Ionic", "NestJS", "MySQL", "Firestore"],
     category: "Enterprise / EdTech",
@@ -208,7 +226,7 @@ export const projects = [
     logo: "/images/neopat.png",
     featured: true,
     gradient: "from-cyan-500/10 to-blue-500/10",
-    metrics: ["60K+ users", "Real-time infra", "RBAC complete"],
+    metrics: ["110K+ users", "Real-time infra", "RBAC complete"],
   },
   {
     id: "instagram-wrapped",
@@ -227,7 +245,7 @@ export const projects = [
     ],
     tech: ["React", "Vite", "Framer Motion", "Cloudflare Workers", "Llama-3"],
     category: "Consumer / Privacy",
-    year: "Dec 2024",
+    year: "2025",
     live: "https://inwrapped.vimalrajsvr404.workers.dev/",
     preview: true,
     featured: true,
@@ -286,34 +304,39 @@ export const projects = [
 
 export const skills = [
   {
-    category: "Frontend",
+    category: "Languages",
     color: "indigo",
-    items: ["Angular", "React", "TypeScript", "HTML5", "CSS3", "Framer Motion", "PrimeNG", "Material UI", "Ionic"],
+    items: ["TypeScript", "JavaScript", "Python", "SQL"],
   },
   {
     category: "Backend",
     color: "violet",
-    items: ["Node.js", "NestJS", "FastAPI", "REST APIs", "WebSockets", "Celery"],
+    items: ["Node.js", "NestJS", "FastAPI", "REST APIs", "Celery", "Pub/Sub", "Asynchronous Processing"],
   },
   {
-    category: "Databases",
+    category: "Frontend",
     color: "cyan",
-    items: ["MySQL", "Firestore", "MongoDB", "ClickHouse", "Elasticsearch"],
+    items: ["Angular", "React", "Ionic", "HTML/CSS"],
   },
   {
-    category: "AI & Automation",
-    color: "purple",
-    items: ["Google Gemini AI", "Groq", "Llama-3", "AssemblyAI", "STT/TTS Pipelines", "Supermemory", "n8n", "Prompt Engineering"],
-  },
-  {
-    category: "Cloud & DevOps",
-    color: "emerald",
-    items: ["GCP (GKE, VPC, Functions)", "Cloudflare Workers", "Microsoft Azure", "Docker", "Firebase"],
-  },
-  {
-    category: "Developer Tools",
+    category: "Data",
     color: "orange",
-    items: ["VS Code Extension API", "Git", "Postman", "Jira", "TypeScript AST"],
+    items: ["MySQL", "MongoDB", "Firestore", "Redis", "Elasticsearch", "ClickHouse"],
+  },
+  {
+    category: "Cloud & Infrastructure",
+    color: "emerald",
+    items: ["GCP", "GKE/Kubernetes", "Docker", "Cloudflare (CDN/WAF)", "Firebase", "Azure ACS", "CI/CD"],
+  },
+  {
+    category: "Observability & Security",
+    color: "indigo",
+    items: ["SigNoz (logs, traces, alerting)", "GCP IAM", "WAF & Bot Protection", "Cloud Security Audits"],
+  },
+  {
+    category: "AI",
+    color: "purple",
+    items: ["LLM Integrations", "Structured Outputs", "Gemini", "Groq", "Llama-3", "STT/TTS Pipelines"],
   },
 ]
 
@@ -321,7 +344,7 @@ export const awards = [
   {
     title: "Super Newcomer of the Year",
     org: "Iamneo",
-    period: "April 2024",
+    period: "2024",
     description: "Recognized for spearheading product optimisations and driving feature innovation across the platform",
   },
   {
@@ -344,20 +367,20 @@ export const teaching = [
     org: "Bannari Amman Institute of Technology",
     period: "2022 — 2024",
     description:
-      "Designed and delivered curriculum across C/C++, Machine Learning, and MERN Stack for 105+ students across three academic levels. Not a TA reading slides. A practitioner building instinct in others.",
+      "Trained 105+ students in C/C++, Machine Learning and MERN Stack.",
     students: 105,
     topics: ["C / C++", "Machine Learning", "MERN Stack"],
-    outcome: "Measurable placement outcome improvement",
+    outcome: "105+ students trained",
   },
   {
-    title: "Engineering Mentorship",
+    title: "Team Leadership & Talks",
     org: "Iamneo",
-    period: "April 2026 — Present",
+    period: "2026 — Present",
     description:
-      "Mentoring interns across product modules. Establishing architectural patterns, code review culture, and engineering instincts that accelerate team delivery without sacrificing quality.",
+      "Leading a team of 5 engineers with code reviews and production ownership. Speaker at an LLMs in Production seminar on Type-Safe AI, and an AI bootcamp on agents, MCP and prompt-injection defence (2026).",
     students: null,
-    topics: ["System design", "Code review", "Angular architecture"],
-    outcome: "Accelerated team delivery cycles",
+    topics: ["Code review", "Type-Safe AI", "Agents & MCP"],
+    outcome: "Team of 5 · 2 talks",
   },
 ]
 
