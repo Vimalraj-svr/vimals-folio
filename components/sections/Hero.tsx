@@ -1,10 +1,11 @@
 import Image from "next/image"
 import { stats, awards, profile } from "@/lib/data"
 
-const stack = ["Angular", "NestJS", "FastAPI", "TypeScript", "GCP", "Gemini AI", "Cloudflare"]
+const stack = ["Angular", "NestJS", "FastAPI", "TypeScript", "GKE", "SigNoz", "Cloudflare"]
 
 const building = [
-  "NeoPAT 2.0 ERP",
+  "NeoPAT (110K+ users)",
+  "NeoPAT MCP Server",
   "AI Mock Interview Platform",
 ]
 

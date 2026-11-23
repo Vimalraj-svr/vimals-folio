@@ -33,11 +33,10 @@ export function About() {
 
         <div className="about-text-block">
           <p className="about-intro">
-            <strong>Full Stack Engineer specialising in enterprise-grade Angular systems, Node.js backends, and AI-powered workflows.</strong>{" "}
-            {profile.summary.split('. ').slice(1).join('. ')}
+            <strong>{profile.summary}</strong>
           </p>
           <p className="about-intro" style={{ marginTop: "1.5rem" }}>
-            Based in {profile.location}. Currently at {profile.company} — building platforms, mentoring engineers, and shipping things that matter.
+            Based in {profile.location}. Currently at {profile.company} — building platforms, leading engineers, and shipping things that matter.
           </p>
         </div>
 
